@@ -22,6 +22,7 @@ async def root():
 async def health():
     return {"status": "ok"}
 
+# character endpoints
 # endpoint with path parameters
 @app.post("/character", response_model=Character)
 async def create_character(character: Character):
